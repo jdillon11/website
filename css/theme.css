@@ -1,0 +1,195 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #D7DDE7;
+    height: 100%;
+}
+
+.card {
+    background: url(../images/background@2x.jpg);
+    background-size: 1300px 660px;
+    border: none;
+    border-radius: 0;
+    padding-top: 25px;
+    width: 1300px;
+}
+
+.sub-card {
+    padding: 60px 50px; 
+}
+
+.sub-card p {
+    color: #343537;
+    font-family: sofia-pro, sans-serif;
+    font-size: 20px;
+    line-height: 31px;
+    max-width: 600px;
+    padding-top: 25px;
+    position: relative;
+}
+
+.sub-card p:before {
+    content:""; 
+    background: #D7DDE7; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 4px; 
+    width: 10%;
+  }
+
+h1 {
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    margin-bottom: 35px;
+}
+
+h1 span {
+    display: block;
+}
+
+.light {
+    font-size: 40px !important;
+    font-weight: 900;
+}
+
+.heavy {
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.small {
+    color: #828487;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin-bottom: -5px;
+    text-transform: uppercase;
+}
+
+.large {
+    color: #343537;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -3px;
+}
+
+.josh-image {
+    height: 400px;
+}
+
+.center {
+    text-align: center; 
+}
+
+.main-navigation {
+    padding: 0;
+}
+
+.main-navigation div {
+    background: #474d5e;
+    border-right: 1px dashed #555c70;
+    float: left;
+    padding: 30px 0 30px 0;
+    text-align: center;
+    width: 33.3333333333%;
+}
+
+.main-navigation div:last-child {
+    border: none;
+}
+
+.main-navigation a {
+    color: #afb7cf;
+    display: inline-block;
+    font-family: sofia-pro, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    pointer-events: all;
+    position: relative;
+
+    transition: color .35s ease-in-out;
+}
+
+.main-navigation a:hover {
+    text-decoration: none;
+    color: #c7b18d;
+}
+
+.main-navigation a:before, .main-navigation a:after, .main-navigation .nav-item-inner:before, .main-navigation .nav-item-inner:after {
+    content: "";
+    display: block;
+    height: 10px;
+    pointer-events: none;
+    position: absolute;
+    width:10px;
+
+    transition: border .25s ease-in-out, top .25s ease-in-out, right .25s ease-in-out, bottom .25s ease-in-out, left .25s ease-in-out;
+}
+
+.main-navigation a:before {
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    left: -10px;
+    top: -10px;
+}
+
+.main-navigation a:hover:before {
+    border-left: 2px solid #2e85ce;
+    border-top: 2px solid #2e85ce;
+    left: -3px;
+    top: -3px;
+}
+
+.main-navigation a:after {
+    border-right: 2px solid transparent;
+    border-top: 2px solid transparent;
+    right: -10px;
+    top: -10px;
+}
+
+.main-navigation a:hover:after {
+    border-right: 2px solid #2e85ce;
+    border-top: 2px solid #2e85ce;
+    right: -3px;
+    top: -3px;
+}
+
+.nav-item-inner {
+    padding: 5px 10px;
+}
+
+.nav-item-inner:before {
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    bottom: -10px;
+    left: -10px;
+}
+
+.nav-item-inner:hover:before {
+    border-bottom: 2px solid #2e85ce;
+    border-left: 2px solid #2e85ce;
+    bottom: -3px;
+    left: -3px;
+}
+
+.nav-item-inner:after {
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+    bottom: -10px;
+    right: -10px;
+}
+
+.nav-item-inner:hover:after {
+    border-bottom: 2px solid #2e85ce;
+    border-right: 2px solid #2e85ce;
+    bottom: -3px;
+    right: -3px;
+}
