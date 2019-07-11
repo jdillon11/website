@@ -1,10 +1,16 @@
-html {
-    height: 100%;
-}
-
 body {
     background: #D7DDE7;
-    height: 100%;
+}
+
+#grid {
+    display: grid;
+    grid-template-areas:
+        ". . ."
+        ". c ."
+        ". . .";
+    grid-template-columns: 1fr 1300px 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    height: 100vh;
 }
 
 .card {
@@ -12,15 +18,34 @@ body {
     background-size: 1300px 660px;
     border: none;
     border-radius: 0;
-    padding-top: 25px;
-    width: 1300px;
+    display: grid;
+    grid-area: c;
+    grid-column-gap: 50px;
+
+    grid-template-areas:
+        ". ."
+        "j t"
+        ". ."
+        "m m";
+    grid-template-columns: 542px auto;
+    grid-template-rows: 73px 400px 72px 100px;
+    justify-items: center;
+    align-items: center;
+    min-width: 1300px;
 }
 
-.sub-card {
-    padding: 60px 50px; 
+#josh-image {
+    grid-area: j;
+    align-self: center;
 }
 
-.sub-card p {
+#intro {
+    grid-area: t;
+    justify-self: start;
+    width: auto;
+}
+
+#intro p {
     color: #343537;
     font-family: sofia-pro, sans-serif;
     font-size: 20px;
@@ -30,15 +55,20 @@ body {
     position: relative;
 }
 
-.sub-card p:before {
+#intro p:before {
     content:""; 
     background: #D7DDE7; 
-    position: absolute; 
+    position: absolute;
     top: 0; 
     left: 0; 
     height: 4px; 
     width: 10%;
-  }
+}
+
+#navigation {
+    grid-area: m;
+    width: 100%;
+}
 
 h1 {
     font-family: sofia-pro, sans-serif;
