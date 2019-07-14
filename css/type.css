@@ -1,0 +1,117 @@
+body {
+    color: #343537;
+    font-family: sofia-pro, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 42px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 21px;
+    line-height: 34px;
+}
+
+#intro p {
+    margin: 0;
+    max-width: 600px;
+    padding-top: 25px;
+    position: relative;
+    
+}
+
+#intro h1 {
+    font-style: normal;
+    margin-bottom: 35px;
+}
+
+#intro h1 span {
+    display: block;
+}
+
+#intro h1 span.small {
+    color: #828487;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin-bottom: -5px;
+    text-transform: uppercase;
+}
+
+#intro h1 span.large {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -3px;
+}
+
+#intro p:before {
+    content:""; 
+    background: #69728b; 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    height: 4px; 
+    width: 10%;
+}
+
+.weight--100 {
+    font-weight: 100;
+}
+
+.weight--200 {
+    font-weight: 200;
+}
+
+.weight--300 {
+    font-weight: 300;
+}
+
+.weight--400 {
+    font-weight: 400;
+}
+
+.weight--500 {
+    font-weight: 500;
+}
+
+.weight--600 {
+    font-weight: 600;
+}
+
+.weight--700 {
+    font-weight: 700;
+}
+
+.weight--900 {
+    font-weight: 900;
+}
